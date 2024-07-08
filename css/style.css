@@ -1,3 +1,12 @@
+/* Variables Start */
+:root {
+  --clr-primary-dark-red: #8a1010;
+  --clr-primary-light-red: #d50101;
+  --clr-primary-red: #ef1923;
+  --clr-gray-text: #6b6b6b;
+  --clr-dark-gray-text: #444444;
+}
+/* Variables End */
 /* General Styles Start */
 * {
   padding: 0;
@@ -7,5 +16,43 @@
 ul {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
+}
+li a {
+  text-decoration: none;
 }
 /* General Styles End */
+/* Header Styles Start */
+.my-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem 0;
+}
+.my-navbar .nav-links {
+  gap: 2rem;
+}
+.my-navbar .social-links {
+  gap: 0.3rem;
+}
+.my-navbar .social-links li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px var(--clr-gray-text);
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+}
+.my-navbar .social-links li:last-child a {
+  background-color: var(--clr-primary-red);
+  border: none;
+  color: white;
+}
+.my-navbar ul li a {
+  color: var(--clr-dark-gray-text);
+}
+
+/* Header Styles End */
