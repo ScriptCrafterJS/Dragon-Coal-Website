@@ -132,3 +132,55 @@ li a {
 }
 
 /* About Styles End */
+/* Our products Styles Start */
+.our-products .container {
+  padding: 5rem 11rem;
+}
+.our-products .taps {
+  display: flex;
+  gap: 1rem;
+}
+.our-products .taps .tap {
+  border: solid 1px #9c9c9c;
+  padding: 0.3rem 0.8rem;
+  color: #9c9c9c;
+}
+.our-products .taps .active {
+  border: none;
+  background-color: #ef1923;
+  color: white;
+}
+.our-products .product {
+  width: 13rem;
+  background: linear-gradient(to top, white, #f9f9f9);
+  position: relative;
+}
+.our-products .product::before {
+  position: absolute;
+  content: "Best Seller";
+  background-color: #f8c025;
+  color: white;
+  width: 5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem;
+  padding-right: 1rem;
+  top: 1rem;
+  left: 0;
+}
+/* now to make a white arrow using after */
+.our-products .product::after {
+  position: absolute;
+  content: "";
+  border: solid 0.7rem;
+  border-color: transparent #f9f9f9 transparent transparent;
+  width: 23.2px;
+  height: 23.2px;
+  top: 1rem;
+  left: 3.6rem;
+}
+.our-products .product .btn-details {
+  border: solid 2px #9c9c9c;
+}
+
+/* Our products Styles End */
