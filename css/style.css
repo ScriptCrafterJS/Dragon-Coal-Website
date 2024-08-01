@@ -52,7 +52,7 @@ a:hover {
     flex-direction: column;
     position: absolute;
     right: 0;
-    top: 4.8rem;
+    top: 4.4rem;
     width: 100%;
     background-color: #f8f8f8;
     z-index: 1000;
@@ -156,6 +156,7 @@ ul li a {
 /* Header Styles End */
 /* About Styles Start */
 .about .container {
+  padding-inline: 3rem;
   padding-top: 5rem;
   justify-content: space-between;
 }
@@ -171,7 +172,6 @@ ul li a {
 }
 .pictures {
   width: 30rem;
-  right: -6rem;
   height: 22rem;
 }
 
