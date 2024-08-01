@@ -25,44 +25,46 @@
   </head>
   <body>
     <!-- Header Start -->
-    <header class="header">
-      <div class="container">
-        <nav class="my-navbar">
-          <div class="logo">
-            <img src="images/header/charcoal-logo.svg" alt="logo" />
-          </div>
-          <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-          <ul class="social-links">
-            <li>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            </li>
-            <li><a href="#">Ar</a></li>
-            <li>
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header class="header overflow-hidden">
+      <section class="navigation fixed-top bg-white">
+        <div class="container p-0">
+          <nav class="my-navbar justify-content-center">
+            <div class="logo">
+              <img src="images/header/charcoal-logo.svg" alt="logo" />
+            </div>
+            <div class="menu">
+              <i class="fa-solid fa-bars d-lg-none h2"></i>
+              <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="about">About us</a></li>
+                <li><a href="products">Products</a></li>
+                <li><a href="news">News</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="footer">Contact Us</a></li>
+              </ul>
+              <ul class="social-links">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li><a href="#">Ar</a></li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
       <section class="landing-cover">
-        <!-- <img
-          class="wooden-background"
-          src="images/header/wooden-background.png"
-          alt=""
-        /> -->
-        <div class="container">
+        <div
+          class="container p-0 text-center text-lg-start justify-content-center justify-content-start"
+        >
           <div class="info row">
             <h1 class="info__title p-0 text-white">
               Lorem Ipsum is simply text
@@ -73,15 +75,15 @@
               ever since the 1500s, when an unknown printer took a galley of
               type and
             </p>
-            <button class="info__btn w-auto">Read More</button>
-            <ul class="landing-slider p-0">
+            <button class="info__btn w-auto mx-auto mx-lg-0">Read More</button>
+            <ul class="slider p-0">
               <li class="slide"></li>
               <li class="slide active"></li>
               <li class="slide"></li>
               <li class="slide"></li>
             </ul>
           </div>
-          <figure>
+          <figure class="d-none d-lg-block">
             <img src="images/header/charcoal_double.png" alt="header-img" />
           </figure>
         </div>
@@ -89,11 +91,13 @@
     </header>
     <!-- Header End -->
     <!-- About Start -->
-    <section class="about py-5">
-      <div class="container">
-        <div class="info">
+    <section id="about" class="about pt-5">
+      <div
+        class="container d-flex justify-content-center justify-content-lg-between"
+      >
+        <div class="info text-center text-lg-start">
           <h2 class="info__title"><span>About</span>Dragon Coal</h2>
-          <p class="info__description w-75">
+          <p class="info__description">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -103,32 +107,49 @@
             with the
           </p>
         </div>
-        <div class="pictures">
-          <div>
-            <img class="w-100" src="images/about/forks.png" alt="forks" />
+        <div class="pictures d-lg-flex position-relative d-none">
+          <div class="position-relative overflow-hidden d-none d-lg-block">
+            <img
+              class="h-100 position-absolute"
+              src="images/about/forks.png"
+              alt="forks"
+            />
           </div>
-          <div>
-            <img class="w-100" src="images/about/stake.png" alt="stake" />
+          <div class="position-relative overflow-hidden d-none d-lg-block">
+            <img
+              class="h-100 position-absolute"
+              src="images/about/machines.png"
+              alt="machines"
+            />
           </div>
-          <div>
-            <img class="w-100" src="images/about/machines.png" alt="machines" />
+          <div class="position-relative overflow-hidden d-none d-lg-block">
+            <img
+              class="h-100 position-absolute"
+              src="images/about/stake.png"
+              alt="stake"
+            />
           </div>
+          <div class="red-square d-none d-lg-block"></div>
+          <div class="red-square d-none d-lg-block"></div>
+          <div class="red-square d-none d-lg-block"></div>
         </div>
       </div>
     </section>
     <!-- About End -->
     <!-- Our products Start -->
-    <section class="our-products py-4">
-      <div class="container px-">
-        <h2 class="title"><span class="title-red">Our</span> Products</h2>
-        <ul class="taps mt-4 mb-5">
+    <section id="products" class="our-products">
+      <div class="container">
+        <h2 class="title text-center text-lg-start fw-bold mb-4">
+          <span class="title-red">Our</span> Products
+        </h2>
+        <ul class="taps mb-5 flex-column flex-md-row">
           <li class="tap active">All</li>
           <li class="tap">Accessories</li>
           <li class="tap">smocking coal</li>
           <li class="tap">barbeque</li>
         </ul>
-        <div class="products row g-4">
-          <div class="product text-center pt-5">
+        <div class="products">
+          <div class="product text-center pt-5 px-0 mx-1">
             <div class="img">
               <img
                 src="images/products/charcoal single.png"
@@ -143,13 +164,11 @@
                 non?
               </p>
             </div>
-            <button
-              class="btn btn-outline-danger rounded-0 btn-details px-4 w-100"
-            >
+            <button class="btn btn-outline-danger rounded-0 btn-details w-100">
               Details
             </button>
           </div>
-          <div class="product text-center pt-5">
+          <div class="product text-center pt-5 px-0 mx-1">
             <div class="img">
               <img
                 src="images/products/charcoal single.png"
@@ -164,13 +183,11 @@
                 non?
               </p>
             </div>
-            <button
-              class="btn btn-outline-danger rounded-0 btn-details px-4 w-100"
-            >
+            <button class="btn btn-outline-danger rounded-0 btn-details w-100">
               Details
             </button>
           </div>
-          <div class="product text-center pt-5">
+          <div class="product text-center pt-5 px-0 mx-1">
             <div class="img">
               <img
                 src="images/products/charcoal single.png"
@@ -185,13 +202,11 @@
                 non?
               </p>
             </div>
-            <button
-              class="btn btn-outline-danger rounded-0 btn-details px-4 w-100"
-            >
+            <button class="btn btn-outline-danger rounded-0 btn-details w-100">
               Details
             </button>
           </div>
-          <div class="product text-center pt-5">
+          <div class="product text-center pt-5 px-0 mx-1">
             <div class="img">
               <img
                 src="images/products/charcoal single.png"
@@ -206,13 +221,11 @@
                 non?
               </p>
             </div>
-            <button
-              class="btn btn-outline-danger rounded-0 btn-details px-4 w-100"
-            >
+            <button class="btn btn-outline-danger rounded-0 btn-details w-100">
               Details
             </button>
           </div>
-          <div class="product text-center pt-5">
+          <div class="product text-center pt-5 px-0 mx-1">
             <div class="img">
               <img
                 src="images/products/charcoal single.png"
@@ -227,13 +240,11 @@
                 non?
               </p>
             </div>
-            <button
-              class="btn btn-outline-danger rounded-0 btn-details px-4 w-100"
-            >
+            <button class="btn btn-outline-danger rounded-0 btn-details w-100">
               Details
             </button>
           </div>
-          <div class="product text-center pt-5">
+          <div class="product text-center pt-5 px-0 mx-1">
             <div class="img">
               <img
                 src="images/products/charcoal single.png"
@@ -248,15 +259,192 @@
                 non?
               </p>
             </div>
-            <button
-              class="btn btn-outline-danger rounded-0 btn-details px-4 w-100"
-            >
+            <button class="btn btn-outline-danger rounded-0 btn-details w-100">
               Details
             </button>
           </div>
         </div>
+        <ul class="slider p-0">
+          <li class="slide"></li>
+          <li class="slide active bg-secondary"></li>
+          <li class="slide"></li>
+          <li class="slide"></li>
+        </ul>
       </div>
     </section>
     <!-- Our products End -->
+    <!-- Latest News Start -->
+    <section id="news" class="latest-news pt-4">
+      <div class="container">
+        <h2 class="title text-center text-lg-start fw-bold mb-4">
+          <span class="title-red">Latest</span> News
+        </h2>
+        <div class="news-cards row g-4">
+          <div class="news-card text-secondary lh-lg col-lg-3 col-md-6">
+            <div class="img">
+              <img
+                class="w-100"
+                src="images/news/masks.png"
+                alt="two people wearing masks"
+              />
+            </div>
+            <p class="publish-date mt-2 mb-0">
+              <i class="far fa-clock"></i> 25 may, 2021
+            </p>
+            <h3 class="new-title fs-6 fw-bold m-0">News title here</h3>
+          </div>
+          <div class="news-card text-secondary lh-lg col-lg-3 col-md-6">
+            <div class="img">
+              <img
+                class="w-100"
+                src="images/news/people setting.png"
+                alt="two people wearing masks"
+              />
+            </div>
+            <p class="publish-date mt-2 mb-0">
+              <i class="far fa-clock"></i> 25 may, 2021
+            </p>
+            <h3 class="new-title fs-6 fw-bold m-0">News title here</h3>
+          </div>
+          <div class="news-card text-secondary lh-lg col-lg-3 col-md-6">
+            <div class="img">
+              <img
+                class="w-100"
+                src="images/news/people standing.png"
+                alt="two people wearing masks"
+              />
+            </div>
+            <p class="publish-date mt-2 mb-0">
+              <i class="far fa-clock"></i> 25 may, 2021
+            </p>
+            <h3 class="new-title fs-6 fw-bold m-0">News title here</h3>
+          </div>
+          <div class="news-card text-secondary lh-lg col-lg-3 col-md-6">
+            <div class="img">
+              <img
+                class="w-100"
+                src="images/news/shakehands.png"
+                alt="two people wearing masks"
+              />
+            </div>
+            <p class="publish-date mt-2 mb-0">
+              <i class="far fa-clock"></i> 25 may, 2021
+            </p>
+            <h3 class="new-title fs-6 fw-bold m-0">News title here</h3>
+          </div>
+        </div>
+      </div>
+      <div class="preview-pictures d-flex overflow-hidden">
+        <div class="picture">
+          <img src="images/about/forks.png" alt="forks" />
+          <div class="picture-preview-info">
+            <p>this text is an experiment text</p>
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+        <div class="picture">
+          <img src="images/about/machines.png" alt="machines" />
+          <div class="picture-preview-info">
+            <p>this text is an experiment text</p>
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+        <div class="picture">
+          <img src="images/bottom-slider/cleaning.png" alt="cleaning tools" />
+          <div class="picture-preview-info">
+            <p>this text is an experiment text</p>
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+        <div class="picture">
+          <img src="images/about/stake.png" alt="stake" />
+          <div class="picture-preview-info">
+            <p>this text is an experiment text</p>
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+        <div class="picture">
+          <img src="images/bottom-slider/technology.png" alt="tech" />
+          <div class="picture-preview-info">
+            <p>this text is an experiment text</p>
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+        <div class="picture">
+          <img src="images/bottom-slider/laptob.png" alt="laptop" />
+          <div class="picture-preview-info">
+            <p>this text is an experiment text</p>
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+        <div class="picture">
+          <img src="images/about/forks.png" alt="forks" />
+          <div class="picture-preview-info">
+            <p>this text is an experiment text</p>
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+        <div class="picture">
+          <img src="images/about/machines.png" alt="machines" />
+          <div class="picture-preview-info">
+            <p>this text is an experiment text</p>
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="companies bg-white">
+      <div class="container">
+        <div
+          class="companies-pictures row justify-content-center g-4 align-items-end"
+        >
+          <div class="img col-lg-2 col-md-4 w-auto">
+            <img src="images/companies/Image 6.png" alt="" />
+          </div>
+          <div class="img col-lg-2 col-md-4 w-auto">
+            <img src="images/companies/Image 10.png" alt="" />
+          </div>
+          <div class="img col-lg-2 col-md-4 w-auto">
+            <img src="images/companies/Image 7.png" alt="" />
+          </div>
+          <div class="img col-lg-2 col-md-4 w-auto">
+            <img src="images/companies/Image 8.png" alt="" />
+          </div>
+          <div class="img col-lg-2 col-md-4 w-auto">
+            <img src="images/companies/Image 9.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Latest News End -->
+    <!-- Footer Start -->
+    <footer id="footer" class="footer">
+      <div
+        class="container d-flex justify-content-center gap-5 align-items-center py-4 px-0"
+      >
+        <div class="logo d-none d-lg-block">
+          <img src="images/header/charcoal-logo.svg" alt="logo" />
+        </div>
+        <ul class="nav-links d-none d-lg-flex">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul class="social-links">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer End -->
   </body>
 </html>
